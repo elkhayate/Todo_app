@@ -1,3 +1,22 @@
 .form {
-    
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.ipt {
+    height: 50px;
+    width: 70%;
+    border: 0px;
+    border-radius: 5px;
+    font-size: larger;
+}
+
+.btn {
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-left: 20px;
 }

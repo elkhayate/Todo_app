@@ -1,16 +1,17 @@
 import React,{useState} from 'react'
 import style from "../styles/todoapp.module.css";
 import TodoForm from './TodoForm';
-
+import TodoItem from './TodoItem';
 function TodoApp() {
-    const [tasks, setTasks] = useState([""]);
+    const [tasks, setTasks] = useState([]);
     const addTask = (task) => {
         setTasks([...tasks, task])
     }
     return(
         <div className={style.container}>
+            <h1 className={style.title}>Add your Taks here.</h1>
+            {tasks.map((t) => <TodoItem task = {t.task} />)}
            <TodoForm add={addTask} />
-           {tasks.map(t => <h1 key={t.id}>{t.task}</h1>)}
         </div>
     )
 }

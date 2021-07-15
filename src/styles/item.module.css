@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px;
+    width: 90%;
+    margin: auto;
+}
+.btn {
+    border: 0px;
+    background-color: transparent;
+    cursor: pointer;
+    margin: auto;
+}

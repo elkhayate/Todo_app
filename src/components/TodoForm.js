@@ -16,8 +16,8 @@ export default function TodoForm(props) {
     }
     return (
         <form onSubmit={handleSubmit} className={style.form}>
-            <input type = "text" name = "task" value={task} id = "task" onChange={handleChange} placeholder="Add task here."/>
-            <button><img src={Add} alt = "add img" /></button>
+            <input className={style.ipt} type = "text" name = "task" value={task} id = "task" onChange={handleChange} placeholder="Add task here..."/>
+            <button className={style.btn}><img src={Add} alt = "add img" /></button>
         </form>
     )
 }

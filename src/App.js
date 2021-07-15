@@ -11,8 +11,6 @@ function App() {
         <Route path="/" exact component={Landing} />
         <Route  path="/Todo" component={TodoApp}/>
       </Switch>
-    
-    
     </Router>
     
   );
@@ -21,7 +19,6 @@ function App() {
 export default App;
 
 function Landing() {
-  const Style = {textDecoration: 'none', color : "white"};
   return(
     <>
     <div className={style.container}>
@@ -33,7 +30,7 @@ function Landing() {
                 <img src={todo} alt="todo svg" />
               </div>
           </div>
-          <button className={style.btn}><Link to="/Todo" style={Style}>Get Started</Link></button>
+          <button className={style.btn}><Link to="/Todo" style={{textDecoration: 'none', color : "white"}}>Get Started</Link></button>
     </div>
     </>
   )
