@@ -26,7 +26,7 @@ function Landing() {
     <>
     <div className={style.container}>
       <div className={style.title}>
-        <h1>Todo App w/ Hooks.</h1>
+        <h1>Todo App</h1>
       </div>
           <div className={style.data}>
               <div className={style.svg}> 

@@ -3,14 +3,14 @@ import { v4 as uuidv4 } from 'uuid';
 import style from "../styles/form.module.css";
 import Add from "../img/add.png";
 
-function TodoForm(props) {
-    const [task, setTask] = useState("");
+export default function TodoForm(props) {
+    const [task, setTask] = useState(null);
     const handleChange = (e) => {
         setTask(e.target.value)
     }
     const handleSubmit = (e) => {
         e.preventDefault();
-        const newTask = {...task, id : uuidv4(), completed : false};
+        const newTask = {task, id : uuidv4()};
         props.add(newTask);
         setTask("");
     }
@@ -22,5 +22,3 @@ function TodoForm(props) {
     )
 }
 
-
-export default TodoForm;

@@ -3,7 +3,7 @@ import style from "../styles/todoapp.module.css";
 import TodoForm from './TodoForm';
 
 function TodoApp() {
-    const [tasks, setTasks] = useState([]);
+    const [tasks, setTasks] = useState([""]);
     const addTask = (task) => {
         setTasks([...tasks, task])
     }
@@ -15,4 +15,4 @@ function TodoApp() {
     )
 }
 
-export default TodoApp;
+export default TodoApp; 
