@@ -27,7 +27,7 @@ function Landing() {
       </div>
           <div className={style.data}>
               <div className={style.svg}> 
-                <img src={todo} alt="todo svg" />
+                <img className={style.todo} src={todo} alt="todo svg" />
               </div>
           </div>
           <button className={style.btn}><Link to="/Todo" style={{textDecoration: 'none', color : "white"}}>Get Started</Link></button>
