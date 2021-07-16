@@ -12,7 +12,7 @@ function TodoApp() {
     }
     return(
         <div className={style.container}>
-            <h1 className={style.title}>Add your Taks here.</h1>
+            <h1 className={style.title}>Todo App</h1>
             {tasks.map((t) => <TodoItem delete = {() => handleDelete(t.id)} task = {t.task} />)}
            <TodoForm add={addTask} />
         </div>
