@@ -2,7 +2,7 @@
     width: 90%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 20px;
     position: absolute;
     bottom: 30px;
@@ -30,6 +30,7 @@
         bottom: 0px;
         left: 0px;
         right: 0px;
+        justify-content: space-between;
     }
     .ipt {
         height: 50px;
