@@ -9,7 +9,7 @@ export default function TodoItem(props) {
             <h1>{props.task}</h1>
             <div className={style.btns}>
             <button className={style.btn}><img src={edit} alt = "edit"/></button>
-            <button className={style.btn}><img src={delet} alt = "delete"/></button>
+            <button onClick={props.delete} className={style.btn}><img src={delet} alt = "delete"/></button>
             </div>
         </div>
     )

@@ -7,10 +7,13 @@ function TodoApp() {
     const addTask = (task) => {
         setTasks([...tasks, task])
     }
+    const handleDelete = (id) => {
+        setTasks(tasks.filter(t => t.id !== id))
+    }
     return(
         <div className={style.container}>
             <h1 className={style.title}>Add your Taks here.</h1>
-            {tasks.map((t) => <TodoItem task = {t.task} />)}
+            {tasks.map((t) => <TodoItem delete = {() => handleDelete(t.id)} task = {t.task} />)}
            <TodoForm add={addTask} />
         </div>
     )
